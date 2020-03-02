@@ -1,0 +1,38 @@
+{
+    "name": "reactjs-snippets-vscode",
+    "publisher": "ManuelDanielGutierrezMarin",
+    "displayName": "ReactJs Snippets",
+    "description": "Code snippets for Reactjs applications",
+    "version": "0.1.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/drginm/reactjs-snippets-vscode"
+    },
+    "icon": "images/icon.png",
+    "engines": {
+        "vscode": "^1.41.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/forms.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/hooks.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/react.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/redux.json"
+            }
+        ]
+    }
+}

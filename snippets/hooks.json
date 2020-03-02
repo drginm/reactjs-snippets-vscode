@@ -1,0 +1,37 @@
+{
+    "Handle Simple change - Hooks - React": {
+        "prefix": ["react.hooks.handleSimpleChange", "rhohsc"],
+        "body": [
+             "const ${1:handleModelChange} = (e) => ${2:setModelState}({",
+                "\t...${3:modelState},",
+                "\t[e.target.name]: e.target.value,",
+            "});"
+        ],
+        "description": "Handle Simple change - Hooks - React"
+    },
+    "Handle change - Hooks - React": {
+        "prefix": ["react.hooks.handlechange", "rhohc"],
+        "body": [
+            "${1:handleModelChange}(event) {",
+                "\tconst target = event.target;",
+                "\tconst value = target.type === 'checkbox' ? target.checked : target.value;",
+                "\tconst name = target.name;",
+                "",
+                "\t${2:setModelState}({",
+                    "\t\t...${3:modelState},",
+                    "\t\t[name]: value",
+                "\t});",
+            "}"
+        ],
+        "description": "Handle change - Hooks - React"
+    },
+    "Create State - Hooks - React": {
+        "prefix": ["react.hooks.state.create", "rhosc"],
+        "body": [
+			"const [${1:model}State, set${2:Model}State] = useState({",
+				"\t${3:property}: ${4:'value'},",
+			"});"
+        ],
+        "description": "Create State - Hooks - React"
+    }
+}

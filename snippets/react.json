@@ -1,0 +1,62 @@
+{
+    "Simple Functional Component - React": {
+        "prefix": ["react.component.funcional.simple", "rcfs"],
+        "body": [
+            "import React from 'react';",
+            "",
+            "const ${1:${TM_FILENAME_BASE}} = () => {",
+                "\treturn (",
+                    "\t\t<div>",
+                        "\t\t\tComponent!$0",
+                    "\t\t</div>",
+                "\t);",
+            "};",
+            "",
+            "export default $1;"
+        ],
+        "description": "Simple Functional Component - React"
+    },
+    "Stateful Functional Component - React": {
+        "prefix": ["react.component.funcional.state", "rcfst"],
+        "body": [
+            "import React, { useState } from 'react';",
+            "",
+            "const ${1:${TM_FILENAME_BASE}} = () => {",
+                "\tconst [${2:model}State, set${3:Model}State] = useState({",
+                    "\t\t${4:property}: ${5:'value'},",
+                "\t});",
+
+                "\treturn (",
+                    "\t\t<div>",
+                        "\t\t\tComponent!$0",
+                    "\t\t</div>",
+                "\t);",
+            "};",
+            "",
+            "export default $1;"
+        ],
+        "description": "Stateful Functional Component - React"
+    },
+    "Iterate Array - HTML - React": {
+        "prefix": ["react.html.map", "rhm"],
+        "body": [
+            "{${1:array}.map((${2:val}, ${3:index}) => {",
+                "\treturn (",
+                    "\t\t<div key={$3} className=\"${4:row}\">",
+                        "\t\t\t{$2}$0",
+                    "\t\t</div>",
+                "\t);",
+            "})}"
+        ],
+        "description": "Iterate Array - HTML - React"
+    },
+    "Div - HTML - React": {
+        "prefix": ["react.html.div", "rhd"],
+        "body": [
+			"<div className=\"${1:element}\">",
+				"\t$0",
+			"</div>"
+        ],
+        "description": "Div - HTML - React"
+    }
+}

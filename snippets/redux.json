@@ -1,0 +1,105 @@
+{
+    "Import configureStore - Redux - React": {
+        "prefix": ["react.redux.store.configure.import", "rrsci"],
+        "body": [
+            "import { configureStore } from '@reduxjs/toolkit'"
+        ],
+        "description": "Import configureStore - Redux - React"
+    },
+    "Import Provider - Redux - React": {
+        "prefix": ["react.redux.store.provider.import", "rrspi"],
+        "body": [
+            "import { Provider } from 'react-redux'"
+        ],
+        "description": "Import Provider - Redux - React"
+    },
+    "Define Store - Redux - React": {
+        "prefix": ["react.redux.store.define", "rrsd"],
+        "body": [
+            "const ${1:store} = configureStore({",
+                "\treducer: ${2:rootReducer}",
+            "})"
+        ],
+        "description": "Define Store - Redux - React"
+    },
+    "Provider HTML element - Redux - React": {
+        "prefix": ["react.redux.store.provider.element", "rrspe"],
+        "body": [
+            "<Provider store={store}>",
+                "\t$0",
+            "</Provider>"
+        ],
+        "description": "Provider HTML element - Redux - React"
+    },
+    "Simple Reducer Example - Redux - React": {
+        "prefix": ["react.redux.reducer.simple.example", "rrrsse"],
+        "body": [
+            "import { createSlice } from '@reduxjs/toolkit'",
+            "",
+            "const ${1:modelSlice} = createSlice({",
+                "\tname: '${2:sliceName}',",
+                "\tinitialState: ${3:0},",
+                "\treducers: {",
+                    "\t\t${4:actionName}: state => ${5:state - 1}",
+                "\t}",
+            "})",
+            "",
+            "export const { $4 } = $1.actions",
+            "",
+            "export default $1.reducer"
+        ],
+        "description": "Simple Reducer Example - Redux - React"
+    },
+    "Import Selector - Redux - React": {
+        "prefix": ["react.redux.selector.import", "rrsi"],
+        "body": [
+            "import { connect, useSelector  } from 'react-redux'",
+            "import { createSelector } from '@reduxjs/toolkit'"
+        ],
+        "description": "Import Selector - Redux - React"
+    },
+    "Create Selector - Redux - React": {
+        "prefix": ["react.redux.selector.create", "rrsc"],
+        "body": [
+            "const ${1:selectModelSlice} = createSelector(",
+                "\tstate => state,",
+                "\t${2:stateSlice} => ${3:stateSlice}",
+            ")"
+        ],
+        "description": "Create Selector - Redux - React"
+    },
+    "Map Dispatch Actions - Redux - React": {
+        "prefix": ["react.redux.dispatch.map", "rrdm"],
+        "body": [
+            "const ${1:mapDispatch} = { ${2:actionName } }"
+        ],
+        "description": "Map Dispatch Actions - Redux - React"
+    },
+    "Use Selector - Redux - React": {
+        "prefix": ["react.redux.selector.use", "rrsu"],
+        "body": [
+            "const ${1:sliceName} = useSelector(${2:selectModelSlice})"
+        ],
+        "description": "Use Selector - Redux - React"
+    },
+    "Connect - Redux - React": {
+        "prefix": ["react.redux.connect", "rrc"],
+        "body": [
+            "export default connect(",
+                "\tnull,",
+                "\t${1:mapDispatch}",
+            ")(${2:${TM_FILENAME_BASE}});"
+        ],
+        "description": "Connect - Redux - React"
+    },
+    "Combine Reducers - Redux - React": {
+        "prefix": ["react.redux.reducer.combine", "rrrc"],
+        "body": [
+            "const ${1:rootReducer} = combineReducers({",
+                "\t${2:firstReducer},",
+                "\t${3:secondReducer}",
+            "})"
+        ],
+        "description": "Combine Reducers - Redux - React"
+    }
+}

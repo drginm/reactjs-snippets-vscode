@@ -1,0 +1,82 @@
+{
+    "Text Area - Form - React": {
+        "prefix": ["react.form.field.textarea", "rffta"],
+        "body": [
+            "<textarea",
+                "\tclassName=\"${1:field textarea}\"",
+                "\tname=\"${2:fieldName}\"",
+                "\trows=\"4\"",
+                "\tcols=\"50\"",
+                "\tvalue={${3:stateProperty}}",
+                "\tonChange={${4:handleModelChange}}/>"
+        ],
+        "description": "Text Area - Form - React"
+    },
+    "Textfield - Form - React": {
+        "prefix": ["react.form.field.textfield", "rfftf"],
+        "body": [
+            "<input",
+                "\ttype=\"text\"",
+                "\tclassName=\"${1:field textfield}\"",
+                "\tname=\"${2:fieldName}\"",
+                "\tvalue={${3:stateProperty}}",
+                "\tonChange={${4:handleModelChange}}/>"
+        ],
+        "description": "Textfield - Form - React"
+    },
+    "Number Field - Form - React": {
+        "prefix": ["react.form.field.number", "rffn"],
+        "body": [
+            "<input",
+                "\ttype=\"number\"",
+                "\tclassName=\"${1:field numberfield}\"",
+                "\tname=\"${2:fieldName}\"",
+                "\tvalue={${3:stateProperty}}",
+                "\tonChange={${4:handleModelChange}}/>"
+        ],
+        "description": "Number Field - Form - React"
+    },
+    "Checkbox - Form - React": {
+        "prefix": ["react.form.field.checkbox", "rffc"],
+        "body": [
+            "<input",
+                "\ttype=\"checkbox\"",
+                "\tclassName=\"${1:field checkbox}\"",
+                "\tname=\"${2:fieldName}\"",
+                "\tvalue={${3:stateProperty}}",
+                "\tonChange={${4:handleModelChange}}/>"
+        ],
+        "description": "Checkbox - Form - React"
+    },
+	"Button - Form - React": {
+        "prefix": ["react.form.field.button", "rffb"],
+        "body": [
+			"<button",
+				"\tclassName=\"${1:button}\"",
+				"\tonClick={${2:handleClick}}>",
+                "\t${3:Button Name}",
+			"</button>"
+        ],
+        "description": "Button - Form - React"
+	},
+	"Submit Button - Form - React": {
+        "prefix": ["react.form.field.submit", "rffs"],
+        "body": [
+			"<input",
+				"\ttype=\"submit\"",
+                "\tclassName=\"${1:button submit}\"",
+				"\tvalue=\"${3:Button Name}\"/>"
+        ],
+        "description": "Submit Button - Form - React"
+    },
+    "Label - Form - React": {
+        "prefix": ["react.form.field.label", "rffl"],
+        "body": [
+            "<label>",
+                "\t${1:Field Name:}",
+                "\t$0",
+            "</label>"
+        ],
+        "description": "Label - Form - React"
+    }
+}
