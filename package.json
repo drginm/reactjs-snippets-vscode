@@ -3,7 +3,7 @@
     "publisher": "ManuelDanielGutierrezMarin",
     "displayName": "ReactJs Snippets",
     "description": "Code snippets for Reactjs applications",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/drginm/reactjs-snippets-vscode"

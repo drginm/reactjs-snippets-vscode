@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release
 
+## [0.2.0] - 2020-03-23
+### Changed
+- Modified the README.md to have the existing list of snippets
+
 ## [0.1.0] - 2020-03-01
 ### Added
 
